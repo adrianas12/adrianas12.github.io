@@ -7,21 +7,53 @@
 <style>
 .s1 {background-color: #0039e6;}
   .s2 {background-color: #ff0000;;}
-.s3 {background-color: #00cc00}
   .s4 {background-color:#9900ff}
+  .s3 {background-color: #6a5acd;}
+  body{background-color: #000000;
+font-family: Arial, sans-serif;
+padding: 5px;
+margin: 5px;
+}
+  
+  #top-list {
+  border-style: dashed;
+  border-width: 5px;
+  border-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  }
+  
+  h1:hover{
+    color: red;}
+  
+  h2:hover{ color: white;}
 </style>
+  <script>
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
 
 
-</head>
+</head> 
 
 <body>
- <div class="s1">
+  <ol id="top-list">
+  <li><a href="#1">Ejercicios introducción a HTML</a></li>
+  <li><a href="#2">Ejercicios introducción a CSS</a></li>
+  <li><a href="#3">Ejercicios de más etiquetas</a></li>
+  </ol>
+  <div class="s1">
   <h1>Mi trabajo en TICII Adrián Alperi</h1>
  <p>Me llamo Adrián Alperi Suárez y estoy en segundo de bachillerato, me gusta mucho la programación pues es de lo que me quiero dedicar en un futuro. En mi tiempo libre me gusta entrenar y jugar videojuegos.</p>
  
+    <h2>Web hosting</h2>
 
-  <div class="s2">
-    <center> <h2>Mis ejercicios Introducción HTML</h2>
+      <p>El "web hosting" (o alojamiento web) se refiere al servicio que proporciona a los individuos y organizaciones la posibilidad de almacenar y publicar su sitio web o aplicación en Internet. En términos simples, es como el alquiler de un espacio en un servidor de computadora que está conectado a Internet para que otras personas puedan acceder a tu sitio web.
+    Cuando creas un sitio web, los archivos que componen ese sitio (como HTML, imágenes, videos, etc.) necesitan estar almacenados en un servidor para que las personas puedan visitar tu sitio en línea. Los proveedores de servicios de alojamiento web ofrecen este espacio en sus servidores, y generalmente, los clientes pagan una tarifa mensual o anual por este servicio.</p>
+
+    <p>En este caso yo he utilizado GitHub, este es una plataforma de desarrollo colaborativo basada en la nube que utiliza el sistema de control de versiones Git. Fue adquirida por Microsoft en 2018 y se ha convertido en una herramienta fundamental para muchos desarrolladores y equipos de programación</p>
+<div class="s2">
+<center> <h2 id="1">Mis ejercicios Introducción HTML</h2>
 
 <a href="ejercicios_html/html-ejerc1-intro.html.html">Ejercicio 1</a> <br>
 <a href="ejercicios_html/html-ejerc2-poema.html.html"> Ejercicio 2</a> <br>
@@ -32,19 +64,11 @@
 <a href="ejercicios_html/html-ejerc6_1-img.html.html"> Ejercicio 6.1</a> <br>
 <a href="ejercicios_html/html-ejerc7-viaje.html.html"> Ejercicio 7 </a>
   </center>
-    
-    <div class="s3">
-<h2>Web hosting</h2>
+    <button onclick="scrollToTop()">volver a inicio</button>
+  
 
-  <p>El "web hosting" (o alojamiento web) se refiere al servicio que proporciona a los individuos y organizaciones la posibilidad de almacenar y publicar su sitio web o aplicación en Internet. En términos simples, es como el alquiler de un espacio en un servidor de computadora que está conectado a Internet para que otras personas puedan acceder a tu sitio web.
-Cuando creas un sitio web, los archivos que componen ese sitio (como HTML, imágenes, videos, etc.) necesitan estar almacenados en un servidor para que las personas puedan visitar tu sitio en línea. Los proveedores de servicios de alojamiento web ofrecen este espacio en sus servidores, y generalmente, los clientes pagan una tarifa mensual o anual por este servicio.</p>
-
-<p>En este caso yo he utilizado GitHub, este es una plataforma de desarrollo colaborativo basada en la nube que utiliza el sistema de control de versiones Git. Fue adquirida por Microsoft en 2018 y se ha convertido en una herramienta fundamental para muchos desarrolladores y equipos de programación</p>
-<h2>Examen</h2>
-  <a href="ejercicios_html/examen_final_adrian.html.html"> examen_final_adrian.html.html </a>
-<p>adrianas12.github.io</p>
 <div class="s4">
-<center><h2> Ejercicios introducción a CSS”</h2>
+<center><h2 id="2"> Ejercicios introducción a CSS</h2>
   <a href="ejercicios_css/html-ejerc8-color.html"> Ejercicio 8</a> <br>
   <a href="ejercicios_css/html-ejerc9-criatura.html"> Ejercicio 9</a> <br>
   <a href="ejercicios_css/html-ejerc10-criatura2.html"> Ejercicio 10</a> <br>
@@ -52,11 +76,31 @@ Cuando creas un sitio web, los archivos que componen ese sitio (como HTML, imág
  <a href="ejercicios_css/html-ejerc12-modelo.html"> Ejercicio 12</a> <br>
   <a href="ejercicios_css/html-ejerc13-desafio.html"> Ejercicio 13</a> <br>
    <a href="ejercicios_css/html-ejerc14-desafio-clases.html"> Ejercicio 14</a> <br>     <a href="ejercicios_css/html-ejerc15-selectores.html"> Ejercicio 15</a> <br>
-  <a href="ejercicios_css/html-ejer16.html"> Ejercicio 16</a> <br></center>
+  <a href="ejercicios_css/html-ejer16.html"> Ejercicio 16</a> <br> </center>
+  <button onclick="scrollToTop()">volver a inicio</button>
+  
+  <h2>Examen</h2> 
+<a href="ejercicios_html/examen_final_adrian.html.html">examen_final_adrian.html.html </a> 
+
+<div class="s3">
+<center><h2 id="3">Ejercicios de más etiquetas</h2>
+  <a href="ejercicios_avanzado/html-ejerc18-vinculos.html"> Ejercicio 18</a> <br>
+  <a href="ejercicios_avanzado/html-ejerc19-vinculos_internos.html"> Ejercicio 19</a> <br> </center>
+  <button onclick="scrollToTop()">volver a inicio</button>
+
+  <h2>Ejercicios de Java</h2>
+  <a href="ejercicios_java/js-ejerc01-primer_programa.html"> Ejercicio 1<a/> <br>
+  <a href="ejercicios_java/js-ejerc02-variable-y-tipos.html"> Ejercicio 2</a> <br>
+
 
 </div>
 
 
-</body>
+  
 
+
+
+
+
+</body>
 </html>
