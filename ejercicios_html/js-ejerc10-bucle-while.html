@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Juego de Adivinanza</title>
+</head>
+<body>
+    <script>
+        let random_number = Math.floor(Math.random() * 100) + 1;
+        let guess = null;
+
+        while (guess !== random_number) {
+            guess = parseInt(prompt("Adivina el número entre 1 y 100:"));
+
+            if (guess < random_number) {
+                alert("Ingresa un número mayor");
+            } else if (guess > random_number) {
+                alert("Ingresa un número menor");
+            }
+        }
+
+        alert("¡Felicidades! Has adivinado el número correcto.");
+    </script>
+</body>
+</html>
+
