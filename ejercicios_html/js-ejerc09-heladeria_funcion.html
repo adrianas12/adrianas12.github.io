@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo uso de formularios y botones</title>
+    <script>
+        function calcularHeladeria() {
+            const precioHelado = document.getElementById("precioHelado").value;
+            const cantidadHelados = document.getElementById("cantidadHelados").value;
+
+            const total = precioHelado * cantidadHelados;
+
+            alert("El coste total es: " + total);
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <label for="precioHelado">Precio del helado:</label>
+        <input type="number" id="precioHelado" name="precioHelado">
+
+        <label for="cantidadHelados">Cantidad de helados:</label>
+        <input type="number" id="cantidadHelados" name="cantidadHelados">
+
+        <button type="button" onclick="calcularHeladeria()">Calcular Coste Total</button>
+    </form>
+
+</body>
+
+</html>
