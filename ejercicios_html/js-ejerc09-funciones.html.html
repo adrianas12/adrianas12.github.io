@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejecutar programa JavaScript al hacer clic en un botón</title>
+</head>
+<body>
+  <button id="miBoton" onclick="ejecutarPrograma()">Haz clic para ejecutar el programa</button>
+
+  <script>
+    function ejecutarPrograma() {
+      var frase = prompt("Introduce una frase:");
+      var frase_nueva = "";
+
+      for (var char in frase) {
+        if (frase[char] === 'a') {
+          frase_nueva += 'u';
+          document.write("Se sustituyó 'a' por 'u'.<br>");
+        } else {
+          frase_nueva += frase[char];
+        }
+      }
+
+      document.write("<h1>Frase modificada: " + frase_nueva + "</h1>");
+    }
+  </script>
+</body>
+</html>
